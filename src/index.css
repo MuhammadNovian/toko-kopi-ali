@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #EBE9E9;
+  background: #0C0F13;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; overflow-x: hidden; }
+::selection { background: #E6B657; color: #0C0F13; }
+
+@layer utilities {
+  .display { font-family: "Anton", sans-serif; letter-spacing: .01em; }
+  .eyebrow { letter-spacing: .24em; font-size: .72rem; font-weight: 700; }
+  .text-balance { text-wrap: balance; }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { scrollbar-width: none; }
+}
+
+.grid-paper {
+  background-image:
+    linear-gradient(rgba(12,15,19,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(12,15,19,.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
